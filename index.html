@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Жiгергаз</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="wrapper">
                 <div class="header__inner">
                     <div class="header__logo">
                         <a class="header__logo-link">
                             <picture>
-                                <source type="image/webp" srcset="images/logo.webp 1x, images/logo@2x.webp 2x">
-                                <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Логотип">
+                                <source type="image/webp" media="(min-width: 1440px)" srcset="images/logo-desctop.webp 1x, images/logo-desctop@2x.webp 2x">
+                                <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Логотип">                            
                             </picture>
                         </a>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="header__nav nav">
                             <ul class="nav__list">
                                 <li class="nav__item"><a class="nav__link" href="#">Газ</a></li>
-                                <li class="nav__item"><a class="nav__link" href="#">Автономное газоснабсжение</a></li>
+                                <li class="nav__item nav__item--active"><a class="nav__link">Автономное газоснабсжение</a></li>
                                 <li class="nav__item"><a class="nav__link" href="#">Газовое оборудование</a></li>
                                 <li class="nav__item"><a class="nav__link" href="#">Талоны</a></li>
                                 <li class="nav__item"><a class="nav__link" href="#">Карта АГЗС</a></li>
@@ -49,7 +49,8 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- /header -->
+            <div class="header__clearfix"></div>
+        </header> <!-- /header -->
     <script src="js/nav.js"></script>
     </body>
 </html>
