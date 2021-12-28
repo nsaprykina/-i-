@@ -321,4 +321,84 @@ body {
   border-bottom: 2px solid #0297f1;
   color: #0297f1;
 }
+
+/* Info
+==========*/
+.info {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(-3.25%, rgba(255, 255, 255, 0.44)), color-stop(-3.23%, rgba(247, 248, 252, 0.716923)), color-stop(-3.22%, rgba(245, 246, 252, 0.719037)), color-stop(-3.21%, rgba(130, 187, 255, 0.47)), color-stop(37.08%, rgba(83, 103, 174, 0.67)), to(rgba(0, 5, 20, 0.86))), url(../images/info-bg-mobil.jpg);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.44) -3.25%, rgba(247, 248, 252, 0.716923) -3.23%, rgba(245, 246, 252, 0.719037) -3.22%, rgba(130, 187, 255, 0.47) -3.21%, rgba(83, 103, 174, 0.67) 37.08%, rgba(0, 5, 20, 0.86) 100%), url(../images/info-bg-mobil.jpg);
+  min-height: 517px;
+  background-color: #5367ae;
+  background-repeat: repeat-x;
+  color: #ffffff;
+  position: relative;
+}
+
+@media (min-width: 460px) {
+  .info {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(-3.25%, rgba(255, 255, 255, 0.44)), color-stop(-3.23%, rgba(247, 248, 252, 0.716923)), color-stop(-3.22%, rgba(245, 246, 252, 0.719037)), color-stop(-3.21%, rgba(130, 187, 255, 0.47)), color-stop(37.08%, rgba(83, 103, 174, 0.67)), to(rgba(0, 5, 20, 0.86))), url(../images/info-bg.jpg);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.44) -3.25%, rgba(247, 248, 252, 0.716923) -3.23%, rgba(245, 246, 252, 0.719037) -3.22%, rgba(130, 187, 255, 0.47) -3.21%, rgba(83, 103, 174, 0.67) 37.08%, rgba(0, 5, 20, 0.86) 100%), url(../images/info-bg.jpg);
+    background-position: top center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .info {
+    min-height: 635px;
+  }
+}
+
+.info__inner {
+  padding-top: 95px;
+}
+
+@media (min-width: 1440px) {
+  .info__inner {
+    padding-top: 30px;
+  }
+}
+
+.info__list {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .info__list {
+    display: block;
+  }
+}
+
+.info__title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.info__text {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 45px;
+  color: #e1e1e1;
+}
+
+.info__button {
+  display: block;
+  margin: 0 auto 25px;
+  padding: 15px 86px;
+  background-color: #0297f1;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
