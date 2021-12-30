@@ -45,6 +45,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DDECFF), color-stop(51.04%, #F7FAFF), to(#DDECFF));
+  background-image: linear-gradient(180deg, #DDECFF 0%, #F7FAFF 51.04%, #DDECFF 100%);
 }
 
 .visually-hidden {
@@ -78,8 +80,7 @@ body {
 ===========*/
 .header {
   padding-top: 50px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#DDECFF), color-stop(51.04%, #F7FAFF), to(#DDECFF));
-  background-image: linear-gradient(180deg, #DDECFF 0%, #F7FAFF 51.04%, #DDECFF 100%);
+  /*background-image: linear-gradient(180deg, $light-blue 0%, $blue 51.04%, $light-blue 100%);*/
 }
 
 @media (min-width: 1440px) {
@@ -375,8 +376,27 @@ body {
 
 @media (min-width: 1440px) {
   .info__list {
-    display: block;
+    list-style: none;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 103px;
   }
+}
+
+.info__link {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .info__title {
@@ -386,6 +406,15 @@ body {
   font-weight: 700;
   font-style: normal;
   margin-bottom: 20px;
+  color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .info__title {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 5px;
+  }
 }
 
 .info__text {
@@ -396,6 +425,14 @@ body {
   font-style: normal;
   margin-bottom: 45px;
   color: #e1e1e1;
+}
+
+@media (min-width: 1440px) {
+  .info__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
 }
 
 .info__break {
@@ -429,6 +466,14 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .info__button {
+    padding: 16px 48px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .info__pic {
   padding-top: 25px;
   border-radius: 10px;
@@ -448,6 +493,12 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
+  .info__pic {
+    padding-top: 35px;
+  }
+}
+
 .info__pic-wrapper::before {
   content: '';
   display: block;
@@ -459,5 +510,13 @@ body {
   right: -25px;
   bottom: -25px;
   z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  .info__pic-wrapper::before {
+    width: 320px;
+    height: 440px;
+    border-radius: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
