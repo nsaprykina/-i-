@@ -55,6 +55,22 @@ body {
     }
 }
 
+.title {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    font-style: normal;
+    color: $dark-blue;
+}
+
+@media (min-width: 1440px) {
+    .title {
+        font-size: 38px;
+        line-height: 47px;
+    }
+}
+
 
 /* Header
 ===========*/
@@ -424,6 +440,7 @@ body {
     line-height: 19px;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
 }
 
 @media (min-width: 460px) {
@@ -481,5 +498,119 @@ body {
         width: 320px;
         height: 440px;
         border-radius: 15px;
+    }
+}
+
+
+/* Directions
+==========*/
+
+.directions__inner {
+    padding-top: 285px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 460px) {
+    .directions__inner {
+        padding-top: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    .directions__inner {
+        padding-top: 50px;
+    }
+}
+
+.directions__title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 1440px) {
+    .directions__title {
+        margin-bottom: 38px;
+    }
+}
+
+.directions__list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    -moz-scrollbars-none: scroll;
+    overflow-x: scroll;
+    scroll-snap-type: x;
+}
+
+@media (min-width: 768px) {
+    .directions__list {
+        display: flex;
+        justify-content: space-between;
+        -moz-scrollbars-none: hidden;
+        overflow-x: hidden;
+        scroll-snap-type: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .directions__list {
+        padding-bottom: 81px;
+    }
+}
+
+.directions__item {
+    width: 200px;
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0px 2px 8px $black14;
+}
+
+@media (min-width: 1024px) {
+    .directions__item {
+        width: 275px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .directions__item {
+        width: 350px;
+        min-height: 345px;
+    }
+}
+
+.directions__image {
+    display: flex;
+    justify-content: center;
+}
+
+.directions__text {
+    padding: 18px 9px 35px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: $dark-blue;
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    .directions__text {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+.directions__pic {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .directions__pic {
+        display: block;
     }
 }
