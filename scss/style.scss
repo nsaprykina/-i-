@@ -12,7 +12,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, p, ul, dl {
     margin: 0;
 }
 
@@ -927,4 +927,81 @@ body {
         font-weight: 400;
         font-style: normal;
     }
+}
+
+
+/* Problem
+===========*/
+
+.problem {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 1440px) {
+    .problem {
+        padding-top: 55px;
+    }
+}
+
+.problem__title {
+    margin-bottom: 20px;
+}
+
+.problem__term {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: $sapphire;
+}
+
+.problem__term-color {
+    font-weight: 600;
+    color: $dark-blue;
+}
+
+.problem__definition {
+    margin-left: 0;
+}
+
+.problem__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.problem__item {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: $sapphire;
+    margin-bottom: 5px;
+}
+
+.problem__color {
+    color: $dark-blue;
+}
+
+.problem__result-title {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: $dark-blue;
+}
+
+.problem__text {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: $sapphire;
 }
