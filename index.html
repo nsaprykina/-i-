@@ -235,49 +235,95 @@
                                 </dl>
                             </div>
                             <div class="problem__slider slider">
-                                <!--<div class="slides">
-                                    <input type="radio" name="radio-btn" id="img-1">
-                                    <div class="slide-container">
-                                        <div class="slide slide--1">
-                                            Картинка-1
-                                        </div>
-                                        <div class="nav">
-                                            <label for="img-3" class="prev">&#x2039;</label>
-                                            <label for="img-2" class="next">&#x203a</label>
-                                        </div>
+                                <input class="slider__input" type="radio" name="radio-btn" id="img-1">
+                                <div class="slider__container">
+                                    <div class="slider__photo">
+                                        <picture>
+                                            <source type="image/webp" media="(min-width: 1440px)" srcset="images/photo.webp 1x, images/photo@2x.webp 2x">
+                                            <source media="(min-width: 1440px)" srcset="images/photo.jpg 1x, images/photo@2x.jpg 2x">
+                                            <source type="image/webp" srcset="images/photo-mobil.webp 1x, images/photo-mobil@2x.webp 2x">
+                                            <img src="images/photo-mobil.jpg" srcset="images/photo-mobil@2x.jpg 2x" alt="Многоэтажные дома с высоты птичьего полёта">
+                                        </picture>
                                     </div>
-                            
-                                    <input type="radio" name="radio-btn" id="img-2" checked>
-                                    <div class="slide-container">
-                                        <div class="slide slide--2">
-                                            Картинка-2
-                                        </div>
-                                        <div class="nav">
-                                            <label for="img-1" class="prev">&#x2039;</label>
-                                            <label for="img-3" class="next">&#x203a</label>
-                                        </div>
+                                    <div class="slider__background"></div>
+                                    <div class="slider__number">1</div>
+                                    <div class="slider__text">
+                                        <p class="slider__name">ЖК “Арнау”</p>
+                                        <p class="slider__city">г.Алматы</p>
                                     </div>
-                            
-                                    <input type="radio" name="radio-btn" id="img-3">
-                                    <div class="slide-container">
-                                        <div class="slide slide--3">
-                                            Картинка-3
-                                        </div>
-                                        <div class="nav">
-                                            <label for="img-2" class="prev">&#x2039;</label>
-                                            <label for="img-1" class="next">&#x203a</label>
-                                        </div>
+                                    <div class="slider__nav">
+                                        <label class="slider__next" for="img-2"></label>
                                     </div>
-                                    <div class="nav-dots">
-                                        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                                        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                                        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                                    </div>		
                                 </div>
-                                <div class="da">
-                                    <input class="da__input" type="radio" name="radio">
-                                    <input class="da__input" type="radio" name="radio">
-                                </div>-->
+
+                                <input class="slider__input" type="radio" name="radio-btn" id="img-2" checked>
+                                <div class="slider__container">
+                                    <div class="slider__photo">
+                                        <picture>
+                                            <source type="image/webp" media="(min-width: 1440px)" srcset="images/photo.webp 1x, images/photo@2x.webp 2x">
+                                            <source media="(min-width: 1440px)" srcset="images/photo.jpg 1x, images/photo@2x.jpg 2x">
+                                            <source type="image/webp" srcset="images/photo-mobil.webp 1x, images/photo-mobil@2x.webp 2x">
+                                            <img src="images/photo-mobil.jpg" srcset="images/photo-mobil@2x.jpg 2x" alt="Многоэтажные дома с высоты птичьего полёта">
+                                        </picture>
+                                    </div>
+                                    <div class="slider__background"></div>
+                                    <div class="slider__number">2</div>
+                                    <div class="slider__text">
+                                        <p class="slider__name">ЖК “Берёзово”</p>
+                                        <p class="slider__city">г.Усмань</p>
+                                    </div>
+                                    <div class="slider__nav">
+                                        <label class="slider__next" for="img-3"></label>
+                                    </div>
+                                </div>
+
+                                <input class="slider__input" type="radio" name="radio-btn" id="img-3">
+                                <div class="slider__container">
+                                    <div class="slider__photo">
+                                        <picture>
+                                            <source type="image/webp" media="(min-width: 1440px)" srcset="images/photo.webp 1x, images/photo@2x.webp 2x">
+                                            <source media="(min-width: 1440px)" srcset="images/photo.jpg 1x, images/photo@2x.jpg 2x">
+                                            <source type="image/webp" srcset="images/photo-mobil.webp 1x, images/photo-mobil@2x.webp 2x">
+                                            <img src="images/photo-mobil.jpg" srcset="images/photo-mobil@2x.jpg 2x" alt="Многоэтажные дома с высоты птичьего полёта">
+                                        </picture>
+                                    </div>
+                                    <div class="slider__background"></div>
+                                    <div class="slider__number">3</div>
+                                    <div class="slider__text">
+                                        <p class="slider__name">ЖК “Сэргэ”</p>
+                                        <p class="slider__city">г.Якутск</p>
+                                    </div>
+                                    <div class="slider__nav">
+                                        <label class="slider__next" for="img-4"></label>
+                                    </div>
+                                </div>
+
+                                <input class="slider__input" type="radio" name="radio-btn" id="img-4">
+                                <div class="slider__container">
+                                    <div class="slider__photo">
+                                        <picture>
+                                            <source type="image/webp" media="(min-width: 1440px)" srcset="images/photo.webp 1x, images/photo@2x.webp 2x">
+                                            <source media="(min-width: 1440px)" srcset="images/photo.jpg 1x, images/photo@2x.jpg 2x">
+                                            <source type="image/webp" srcset="images/photo-mobil.webp 1x, images/photo-mobil@2x.webp 2x">
+                                            <img src="images/photo-mobil.jpg" srcset="images/photo-mobil@2x.jpg 2x" alt="Многоэтажные дома с высоты птичьего полёта">
+                                        </picture>
+                                    </div>
+                                    <div class="slider__background"></div>
+                                    <div class="slider__number">4</div>
+                                    <div class="slider__text">
+                                        <p class="slider__name">ЖК “Высота”</p>
+                                        <p class="slider__city">г.Калуга</p>
+                                    </div>
+                                    <div class="slider__nav">
+                                        <label class="slider__next" for="img-1"></label>
+                                    </div>
+                                </div>
+                                <div class="slider__dots">
+                                    <label for="img-1" class="slider__dot" id="img-dot-1"></label>
+                                    <label for="img-2" class="slider__dot" id="img-dot-2"></label>
+                                    <label for="img-3" class="slider__dot" id="img-dot-3"></label>
+                                    <label for="img-4" class="slider__dot" id="img-dot-4"></label>
+                                </div>
                             </div>
                             <div class="problem__result">
                                 <h3 class="problem__result-title">Результат:</h3>
