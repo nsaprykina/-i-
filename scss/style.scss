@@ -25,6 +25,7 @@ body {
     line-height: 21px;
     font-weight: 400;
     font-style: normal;
+    color: $sapphire;
     background-image: linear-gradient(180deg, $light-blue 0%, $blue 51.04%, $light-blue 100%);
 }
 
@@ -1259,3 +1260,267 @@ body {
 .slider__dot:hover {
     background-color: $dark-blue;
 }
+
+
+/* Message
+==========*/
+
+.message {
+    padding-bottom: 25px;
+}
+
+@media (min-width: 1440px) {
+    .message {
+        padding-bottom: 100px;
+    }
+}
+
+.message__inner {
+    background-color: $white;
+    border-radius: 20px;
+    padding: 25px 15px 34px;
+    box-shadow: 0px 1px 6px $black20;
+}
+
+@media (min-width: 1024px) {
+    .message__inner {
+        padding: 30px 30px 34px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .message__inner {
+        padding: 30px 65px 43px;
+    }
+}
+
+.message__title {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+    .message__title {
+        margin-bottom: 40px;
+    }
+}
+
+.message__content {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .message__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .message__content {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+
+.message__info {
+    padding-top: 0;
+}
+
+@media (min-width: 1440px) {
+    .message__info {
+        padding-top: 10px;
+    }
+}
+
+.message__text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: $sapphire;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1440px) {
+    .message__text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+}
+
+.message__question {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: $orange;
+    margin-bottom: 22px;
+}
+
+@media (min-width: 1024px) {
+    .message__question {
+        margin-bottom: 45px;
+    }
+}
+
+.message__list {
+    padding-left: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 1440px) {
+    .message__list {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.message__item {
+    padding-left: 40px;
+    min-height: 25px;
+    margin-bottom: 20px;
+    background-size: 25px 25px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+    .message__item {
+        margin-bottom: 30px;
+    }
+}
+
+.message__item--icon-1 {
+    background-image: url(../images/phone-call.svg);
+}
+
+.message__item--icon-2 {
+    background-image: url(../images/evaluation.svg);
+}
+
+.message__item--icon-3 {
+    background-image: url(../images/headphones.svg);
+}
+
+.message__item--icon-4 {
+    background-image: url(../images/bulb.svg);
+}
+
+.message__item--icon-5 {
+    background-image: url(../images/puzzle-piece.svg);
+}
+
+.message__application {
+    border: 1px solid $light-grey;
+    border-radius: 15px;
+    padding: 20px 30px 21px;
+    text-align: center;
+}
+
+.message__title-form {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: normal;
+    color: $dark-blue;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.message__field {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.message__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $silver;
+    border-radius: 5px;
+}
+
+.message__label {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ef8711;
+    background-color: #ffffff;
+    padding-right: 4px;
+    padding-left: 5px;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+}
+
+.message__btn {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: $white;
+    padding: 12px 82px 11px;
+    border: none;
+    background-color: $dark-blue;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .message__btn {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .message__btn {
+        margin-top: 30px;
+    }
+}
+
+
+/* Securities
+==========*/
+
+.securities {
+    display: none;
+}
+
+@media (min-width: 1440px) {
+    .securities {
+        display: block;
+        background-image: 
+        linear-gradient(90deg, $dark-blue65 -3.21%, $black-sea71 32.84%, $blue-craiola86 100%),url(../images/securities-bg.jpg);
+        width: 100%;
+        min-height: 810px;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+}
+
+.securities__info {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 600;
+    font-style: normal;
+    color: $white;
+    padding-bottom: 60px;
+}
+
+.securities__info-inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.securities__content {
+    display: flex;
+}
+
