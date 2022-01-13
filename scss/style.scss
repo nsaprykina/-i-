@@ -1524,3 +1524,41 @@ body {
     display: flex;
 }
 
+.securities__nav {
+    padding-top: 47px;
+}
+
+.securities__nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.securities__btn {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.securities__btn--back {
+    transform: rotate(180deg);
+}
+
+.securities__btn svg {
+    width: 25px;
+    height: 25px;
+}
+
+.securities__link {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: $white;
+    padding: 17px 57px;
+    border: 1px solid $white;
+    border-radius: 10px;
+    text-decoration: none;
+}
